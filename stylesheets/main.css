@@ -45,11 +45,28 @@ p {
 a { text-decoration: none; }
 a, a:hover { color: #19d; }
 
+#header-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 666px;
+  background-color: #f1f5fa;
+}
 
 #header img {
   margin: 50px; 
   width: 250px;
   height: 250px;
+  border: 15px solid #aaa;
+}
+
+#work-slider {
+  width: 80%;
+  max-width: 900px;
+  min-width: 470px;
+  margin: 0 auto;
   border: 15px solid #aaa;
 }
 
@@ -80,10 +97,11 @@ a, a:hover { color: #19d; }
   margin: 0 auto;
   text-align: center;
 }
-
 .spacer {
   height: 100px;
+  width: 100%;
 }
+.love { color: red; }
 
 
 /***/
@@ -92,8 +110,15 @@ a, a:hover { color: #19d; }
 /*
 /***/
 
-.navbar-default {
-  background: none;
+.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-default, .navbar-collapse {
+  z-index: 1;
+  background: #f1f5fa;
   border: none;
 }
 .navbar-nav {
@@ -121,3 +146,5 @@ a, a:hover { color: #19d; }
   color: #777;
   border-bottom: 1px solid #ccc;
 }
+
+.carousel-indicators { bottom: 10px; }

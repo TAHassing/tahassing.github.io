@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="initial-scale=1">
+  <meta name="viewport" content="initial-scale=1,width=device-width">
 
   <title>Thomas Hassing - Web developer</title>
 
@@ -22,6 +22,7 @@
 
 <body data-spy="scroll" data-target="#main-navbar-collapse">
 
+<div id="header-bg"></div>
 <div id="header" class="content">
   <img src="images/mugshot.jpg" alt="Thomas' face">
   <h1>Thomas Hassing</h1>
@@ -59,25 +60,68 @@
 <div id="about" class="content">
   <h2>In a nutshell</h2>
   <hr>
-  <p>Born and raised Dutchie.</p>
-  <p>Has been in love and working with computers since the age of 10.</p>
-  <p>Fascinated by human (and) society. Loves drawing, photography and music.</p>
-  <p>Holds degrees in graphics design, nature management and social science.</p>
-  <p>Active sport climber and boulderer, thorougly enjoys a good run.</p>
+  <p>I've been turning computers inside-out since the age of 10, in <span class="love">&#60;3</span> ever since :)</p>
+  <p>Love drawing, shooting pictures and (composing) music.</p>
+  <p>I hold degrees in graphics design, <a href="http://www.vhluniversity.com/vhl-studies/bachelor/coastal-zone-management.aspx" target="_blank">nature management</a> and <a href="http://www.wageningenur.nl/en/Education-Programmes/Prospective-Master-Students/MSc-programmes/MSc-Applied-Communication-Science.htm" target="_blank">social science</a>.</p>
+  <p>Active sports/rock climber and boulderer, and I thorougly enjoy a good run.</p>
+  <p>The <a href="http://www.amazon.com/Theory-Leading-Future-It-Emerges/dp/1576757633" target="_blank">practicalities</a> of the <a href="http://www.amazon.com/Stuff-Thought-Language-Window-Nature/dp/0143114247" target="_blank">human brain</a> and <a href="http://www.amazon.com/Social-Intelligence-Science-Human-Relationships/dp/055338449X" target="_blank">society</a> fascinate me deeply.</p>
 </div>
 
 <div class="spacer"></div>
 
 <div id="examples" class="content">
-  <h2>Coding things</h2>
+  <h2>Web things</h2>
   <hr>
-  <p>Works on Linux, prefers <a href="http://www.debian.org/" target="_blank">Debian</a>.
-     Codes in <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> and cli. </p>
-  <p>Focusses on developing in <a href="http://rubyonrails.org/" target="_blank">Rails</a>.
-     Likes to work <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank">dry</a>,
+  <p>I design layouts in Photoshop and turn them into working websites.
+  <p>I'm passionate about <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>
+     and like to work <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank">dry</a>,
      <a href="http://www.git-scm.com/" target="_blank">versioned</a>,
-     and <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">tested</a>.
+     and <a href="http://rspec.info/" target="_blank">tested</a>.</p>
+  <p>Linux is my favorite OS to work on, <a href="http://www.debian.org/" target="_blank">Debian</a> flavoured (currently trying out <a href="http://tanglu.org/" target="_blank">Tanglu</a> 3).</p>
+  <p>During my coding endeavours I prefer <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> and a bash terminal to get stuff done.</p>
+  <br>
+  <p>Some things I made:</p>
 </div>
+
+<div id="work-slider" class="carousel slide" data-interval="5000" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#work-slider" data-slide-to="0" class="active"></li>
+    <li data-target="#work-slider" data-slide-to="1"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active"><img src="images/jrecordings-1.jpg" class="img-responsive"></div>
+    <div class="item"><img src="images/milou-1.jpg" class="img-responsive"></div>
+  </div>
+
+  <a class="left  carousel-control" href="#work-slider" data-slide="prev"><span class="icon-prev"></span></a>
+  <a class="right carousel-control" href="#work-slider" data-slide="next"><span class="icon-next"></span></a> 
+</div>
+
+<!--
+<%= link_to(image_tag(furniture.image1.v150.url, alt: furniture["name_#{I18n.locale}"]), "#", class: "ModalLink", data: { id: furniture.id }) %>
+
+<div class="modal fade" id="Modal<%= furniture.id %>" tabindex="-1" role="dialog" aria-labelledby="<%= furniture["name_#{I18n.locale}"] %>">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="<%= furniture["name_#{I18n.locale}"] %>"><%= furniture["name_#{I18n.locale}"] %></h4>
+      </div>
+      <div class="modal-body">
+        <div class="model-images">
+          <%= image_tag(furniture.image1.v200.url, alt: furniture["name_#{I18n.locale}"]) %>
+          <%= image_tag(furniture.image2.v200.url, alt: furniture["name_#{I18n.locale}"]) if furniture.image2.present? %>
+          <%= image_tag(furniture.image3.v200.url, alt: furniture["name_#{I18n.locale}"]) if furniture.image3.present? %>
+        </div>
+        <%= furniture["description_#{I18n.locale}"].to_s.html_safe %>
+      </div>
+
+    </div>
+  </div>
+</div>
+-->
 
 <div class="spacer"></div>
 
@@ -95,6 +139,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="javascripts/jquery.smoothscroll.js"></script>
+<script src="javascripts/thomas.hassing.js"></script>
 <script src="javascripts/bootstrap.min.js"></script>
 
 </body>
