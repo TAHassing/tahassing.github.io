@@ -1,3 +1,10 @@
+
+@viewport, @-ms-viewport {
+  /* Make the viewport work in IE10, which ignores the meta-tag */
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
 body {
   position: relative;
   font-family: 'Droid Sans', 'Arial', sans-serif;
@@ -67,10 +74,9 @@ a, a:hover { color: #19d; }
   filter: alpha(opacity=100); /* IE8 and below */
 }
 
-
 .content {
   width: 80%;
-  min-width: 550px;
+  min-width: 500px;
   margin: 0 auto;
   text-align: center;
 }
