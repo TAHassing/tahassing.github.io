@@ -144,6 +144,11 @@ a, a:hover { color: #19d; }
   font-size: 20pt;
   color: #3bf;
 }
+.navbar-default .navbar-brand span {
+  font-weight: normal;
+  font-size: 20pt;
+  color: #777;
+}
 
 .navbar-default .navbar-nav > li > a {
   margin: 0 auto;
