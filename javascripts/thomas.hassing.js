@@ -1,5 +1,8 @@
-$(function() {
-  $('.navbar-default').affix({
-    offset: { top: $('.navbar-default').offset().top }
+$(document).ready(function() {
+
+  $('.modal-link').click(function(){
+    var id = $(this).data('id');
+    $('#'+id).modal('show');
   });
+
 });
