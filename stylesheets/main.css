@@ -232,7 +232,7 @@ a, a:hover { color: #19d; }
 /***/
 
 @media screen and (max-device-width: 480px) {
-  #mugshot, .modal-link img {
+  #mugshot, .link-modal {
     width: 150px;
     height: 150px;
     border-width: 10px;
