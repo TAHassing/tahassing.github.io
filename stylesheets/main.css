@@ -66,6 +66,7 @@ a, a:hover { color: #19d; }
 #link-jrec { background-image: url('../images/link_jrec_200px.jpg'); }
 #link-w45 { background-image: url('../images/link_w45_200px.jpg'); }
 .link-modal {
+  background-size: 100% 100%;
   margin: 25px;
   height: 200px;
   width: 200px;
@@ -102,6 +103,7 @@ a, a:hover { color: #19d; }
 #link-github    { background-image: url('../images/icon-github.png'); }
 #link-bitbucket { background-image: url('../images/icon-bitbucket.png'); }
 .link-contact {
+  background-size: 100% 100%;
   margin: 10px 5px 0px;
   height: 65px;
   width: 65px;
