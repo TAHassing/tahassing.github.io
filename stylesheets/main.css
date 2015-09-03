@@ -67,7 +67,7 @@ a, a:hover { color: #19d; }
 #link-w45 { background-image: url('../images/link_w45_200px.jpg'); }
 .link-modal {
   background-size: 100% 100%;
-  margin: 25px;
+  margin: 25px auto;
   height: 200px;
   width: 200px;
   border: 15px solid #aaa;
